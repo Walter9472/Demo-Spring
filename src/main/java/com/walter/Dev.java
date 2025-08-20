@@ -7,6 +7,10 @@ import org.springframework.stereotype.Component;
 
 public class Dev {
 
+    public Dev(){
+        System.out.println("Dev Constructor");
+    }
+
     public void build(){
 
 
