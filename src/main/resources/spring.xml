@@ -7,12 +7,14 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="dev" class="com.walter.Dev">
+<!--        <property name="laptop" ref="lap1"/>-->
+        <constructor-arg ref="lap1"/>
+<!--        <property name="age" value="12"/>-->
+<!--        <constructor-arg index="0" value="14"/>-->
     </bean>
 
-    <bean id="dev1" class="com.walter.Dev">
-    </bean>
 
-    <bean id="laptop" class="com.walter.Laptop">
+    <bean id="lap1" class="com.walter.Laptop">
     </bean>
 
 </beans>

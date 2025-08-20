@@ -13,7 +13,8 @@ public class App
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-//        Dev obj = (Dev) context.getBean("dev");
-//        obj.build();
+        Dev obj = (Dev) context.getBean("dev");
+//        System.out.println(obj.getAge());
+        obj.build();
     }
 }
